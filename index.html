@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Real ou IA?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Real ou IA?</h1>
+        <p class="instruction">Adivinhe se a imagem abaixo foi feita por inteligência artificial ou é uma foto real.</p>
+        
+        <div class="image-box">
+            <img id="quiz-image" src="" alt="Imagem do Quiz">
+        </div>
+
+        <div class="buttons">
+            <button id="btn-real" onclick="verificarResposta('real')">Real</button>
+            <button id="btn-ia" onclick="verificarResposta('ia')">Feita por IA</button>
+        </div>
+
+        <p id="feedback"></p>
+        <p class="score">Pontuação: <span id="pontuacao">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
